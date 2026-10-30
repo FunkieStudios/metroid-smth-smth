@@ -1,1 +1,1 @@
-shaun is stupid and smart at the same time ngl
+haha lol some troubles with the file but its whatevs really
