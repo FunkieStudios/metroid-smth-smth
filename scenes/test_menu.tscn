@@ -1,0 +1,165 @@
+[gd_scene format=3 uid="uid://c5y5wi0pdek4q"]
+
+[ext_resource type="Script" uid="uid://cyh031wlenivl" path="res://scripts/test_menu.gd" id="1_44ria"]
+
+[node name="TestMenu" type="Control" unique_id=390314614]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_44ria")
+
+[node name="Play1" type="Button" parent="." unique_id=888227118]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -536.0
+offset_top = 66.0
+offset_right = -238.0
+offset_bottom = 108.0
+grow_horizontal = 2
+text = "PLAY"
+
+[node name="Debug" type="Button" parent="." unique_id=117629906]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -536.0
+offset_top = 583.0
+offset_right = -238.0
+offset_bottom = 625.0
+grow_horizontal = 2
+text = "GO TO DEBUG"
+
+[node name="Settings1" type="Button" parent="." unique_id=438481100]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -536.0
+offset_top = 118.0
+offset_right = -238.0
+offset_bottom = 160.0
+grow_horizontal = 2
+text = "SETTINGS"
+
+[node name="Exit1" type="Button" parent="." unique_id=1188538353]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -536.0
+offset_top = 171.0
+offset_right = -238.0
+offset_bottom = 213.0
+grow_horizontal = 2
+text = "EXIT"
+
+[node name="Exit2" type="Button" parent="." unique_id=1299366869]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -214.0
+offset_top = 171.0
+offset_right = 84.0
+offset_bottom = 213.0
+grow_horizontal = 2
+text = "YES"
+
+[node name="Exit3" type="Button" parent="." unique_id=1550077735]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -214.0
+offset_top = 227.0
+offset_right = 84.0
+offset_bottom = 269.0
+grow_horizontal = 2
+text = "CANCEL"
+
+[node name="Play2" type="Button" parent="." unique_id=798364752]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -223.0
+offset_top = 65.0
+offset_right = 75.0
+offset_bottom = 107.0
+grow_horizontal = 2
+disabled = true
+text = "NEW GAME"
+
+[node name="Play3" type="Button" parent="." unique_id=49761778]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -223.0
+offset_top = 122.0
+offset_right = 75.0
+offset_bottom = 164.0
+grow_horizontal = 2
+disabled = true
+text = "CONTINUE"
+
+[node name="Play6" type="Button" parent="." unique_id=831586842]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -220.0
+offset_top = 179.0
+offset_right = 78.0
+offset_bottom = 221.0
+grow_horizontal = 2
+disabled = true
+text = "CANCEL"
+
+[node name="Play4" type="Button" parent="." unique_id=844641069]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 87.0
+offset_top = 65.0
+offset_right = 385.0
+offset_bottom = 107.0
+grow_horizontal = 2
+disabled = true
+text = "YES"
+
+[node name="Play5" type="Button" parent="." unique_id=2054717083]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 87.0
+offset_top = 122.0
+offset_right = 385.0
+offset_bottom = 164.0
+grow_horizontal = 2
+disabled = true
+text = "CANCEL"
+
+[connection signal="button_down" from="Play1" to="." method="_on_play_1_button_down"]
+[connection signal="button_down" from="Debug" to="." method="_on_debug_button_down"]
+[connection signal="button_down" from="Exit1" to="." method="_on_exit_1_button_down"]
+[connection signal="button_down" from="Exit2" to="." method="_on_exit_2_button_down"]
+[connection signal="button_down" from="Exit3" to="." method="_on_exit_3_button_down"]
+[connection signal="button_down" from="Play2" to="." method="_on_play_2_button_down"]
+[connection signal="button_down" from="Play6" to="." method="_on_play_6_button_down"]
+[connection signal="button_down" from="Play5" to="." method="_on_play_5_button_down"]

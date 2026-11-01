@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b3dhq31srplrk"]
+
+[ext_resource type="PackedScene" uid="uid://bk88vh1dtfjdh" path="res://scenes/player.tscn" id="1_3e1qr"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_n1i7m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6l2vu"]
+size = Vector2(1296, 64)
+
+[node name="DebugScene" type="Node2D" unique_id=1622279925]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=705388761]
+position = Vector2(616, 632)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D" unique_id=1873338515]
+scale = Vector2(1296, 64)
+mesh = SubResource("QuadMesh_n1i7m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=124877924]
+shape = SubResource("RectangleShape2D_6l2vu")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="StaticBody2D" unique_id=1849043410]
+position = Vector2(536, -152)
+scale = Vector2(1296, 64)
+mesh = SubResource("QuadMesh_n1i7m")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1670471335]
+position = Vector2(536, -152)
+shape = SubResource("RectangleShape2D_6l2vu")
+
+[node name="Player" parent="StaticBody2D" unique_id=593880356 instance=ExtResource("1_3e1qr")]
+position = Vector2(-224, -128)
